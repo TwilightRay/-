@@ -73,6 +73,7 @@ def numbers(x):
         if i%2==0:
             yield i
 print(list(numbers(11)))#преобразование генерации в список
+print("\n\n")
 
 def make_word():
     word=''
@@ -80,3 +81,39 @@ def make_word():
         word+=ch
         yield word
 print(list(make_word()))
+print("\n\n")
+
+def decor5(func):
+    def wrap():
+        print('==========')
+        func()
+        print('==========')
+    return wrap
+def print_text():
+    print('Zdarova')
+decorated=decor5(print_text)
+decorated()
+@decor5
+def print_text():
+    print('Nu privet')
+print_text()
+print("\n\n")
+
+def factorial(x):
+    if x==1: #без базового случая рекурсивная функция может выполняться бесконечно
+        return 1
+    else:
+        return x*factorial(x-1) #hрекурсивная функция может вызывать в себе саму себя
+print(factorial(3))
+print("\n\n")
+#пример непрямой рекурсии
+def is_even(x):
+    if x==0:
+        return True
+    else:
+        return is_odd(x-1)
+def is_odd(x):
+    return not is_even(x)
+print(is_odd(17))
+print(is_even(23))
+print("\n\n")
