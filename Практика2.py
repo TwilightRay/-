@@ -117,3 +117,12 @@ def is_odd(x):
 print(is_odd(17))
 print(is_even(23))
 print("\n\n")
+
+def fib(x):
+    if x<=1:
+        return 1
+    else:
+        return fib(x-1)+fib(x-2)
+print(fib(4))
+print("\n\n")
+

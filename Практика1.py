@@ -106,3 +106,20 @@ for v in enumerate(num):
 for k in squares:
     print (k)
 
+print("\n\n")
+
+num_set={1,2,3,4,5,1,5,7,8,6,1,5,6,8,7,2,3,6,9,8,5,2,1,4,7,8,5,2,3,6,1,4,5,6,9,8,7,3,1,}
+print(num_set)
+word_set = set(["world","privet","pochemu ti podcherkivaeshsya"])
+print(3 in num_set)
+print("spam" not in word_set)
+print("\n\n")
+
+num_set.add(-7)
+print(num_set)
+num_set.remove(2)
+while len(num_set)!=0:
+    print(num_set)
+    num_set.pop()
+print("\n\n")
+
