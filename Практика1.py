@@ -117,9 +117,30 @@ print("\n\n")
 
 num_set.add(-7)
 print(num_set)
-num_set.remove(2)
+num_set.remove(2)#удаляет элемент, если его нет, то выдает ошибку
+num_set.discard(555)#удаляет элемент, если он есть в кучке
 while len(num_set)!=0:
     print(num_set)
     num_set.pop()
 print("\n\n")
 
+first={11,22,33,44,55,66,77,88,99,1,2,3,6,5,8,}
+second={22,555,22,33,66,888,77,11,1,2,3,4,5,6,7,8,9,12,2,32,65,45,78,98}
+print(first|second)#объединяет в одно, содержащее все эл-ты двух кучек
+print(first&second)#возвращает только общие эл-ты
+print(first-second)#только с первого
+print(second-first)#только с первого
+print(first^second)#симметричная разность-не возвращает общие эл-ты, а остальное выводит
+
+print("\n\n")
+
+a = {i * 2 for i in range(10)} # генератор множеств
+print(a)
+
+a = {i ** 2 for i in range(10)} # генератор множеств
+while len(a)!=0:
+    print(a)
+    a.pop()
+print("\n\n")
+print(frozenset('qwerty'))
+print("\n\n")
