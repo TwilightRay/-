@@ -126,3 +126,9 @@ def fib(x):
 print(fib(4))
 print("\n\n")
 
+from itertools import accumulate, takewhile #count - бесконечная прогрессия вверх
+#cycle бесконечно перебирает итерируемый объект
+#repeat повторяет объект бесконечно или столько, сколько нужно
+nums2=list(accumulate(range(19)))
+print(nums2)
+print(list(takewhile(lambda x: x<=54, nums2)))
