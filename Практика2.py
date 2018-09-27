@@ -126,9 +126,33 @@ def fib(x):
 print(fib(4))
 print("\n\n")
 
-from itertools import accumulate, takewhile #count - бесконечная прогрессия вверх
+from itertools import accumulate, takewhile, product, permutations
+#count - бесконечная прогрессия вверх
 #cycle бесконечно перебирает итерируемый объект
 #repeat повторяет объект бесконечно или столько, сколько нужно
 nums2=list(accumulate(range(19)))
 print(nums2)
 print(list(takewhile(lambda x: x<=54, nums2)))
+letters=("A","B")
+print(list(product(letters,range(2))))#все возможные
+print(list(permutations(letters)))#комбинации
+print("\n\n")
+a1={2,6}
+print(len(list(product(range(3),a1))))
+print(list(product(range(3),a1)))
+print("\n\n")
+nums3={1,2,3,4,5,6}
+nums3={0,1,2,3}&nums3
+print(nums3)
+nums3=filter(lambda x:x>1,nums)
+print((list(nums3)))
+print("\n\n")
+def power(x,y):
+    if y==0:
+        return 1
+    else:
+        return x*power(x,y-1)
+print(power(2,3))
+
+
+
