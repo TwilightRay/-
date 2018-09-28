@@ -8,6 +8,7 @@ rover=Cat("dog-colored",4)
 stumpy=Cat("brown",3)
 
 class Dog:
+    legs=4
     def __init__(self,name,color):
         self.name=name
         self.color=color
@@ -16,3 +17,5 @@ class Dog:
 fido=Dog("Fido","brown")
 print(fido.name)
 fido.bark()
+print(fido.legs)
+print(Dog.legs)
