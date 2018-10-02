@@ -32,17 +32,27 @@ class Cat(Animal): #наследуемый класс
 #rover=Cat("dog-colored",4)
 #stumpy=Cat("brown",3)
 
-class Dog(Animal):
-    legs=4
+#class Dog(Animal):
+    #legs=4
     #def __init__(self,name,color):
      #   self.name=name
       #  self.color=color
+    #def bark(self):
+     #   print("Woof!")
+
+
+class Wolf:
+    def __init__(self,name,color):
+        self.name=name
+        self.color=color
     def bark(self):
-        print("Woof!")
+        print("Grr...")
+
+class Dog(Wolf):
+    def bark(self):
+       print("Woof!")
 fido=Dog("Fido","brown")
 print(fido.name)
 fido.bark()
 print(fido.legs)
 print(Dog.legs)
-
-
