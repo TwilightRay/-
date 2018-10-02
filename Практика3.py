@@ -42,6 +42,7 @@ class Cat(Animal): #наследуемый класс
 
 
 class Wolf:
+    legs = 4
     def __init__(self,name,color):
         self.name=name
         self.color=color
@@ -51,6 +52,9 @@ class Wolf:
 class Dog(Wolf):
     def bark(self):
        print("Woof!")
+husky = Dog("Max","grey")
+husky.bark()
+
 fido=Dog("Fido","brown")
 print(fido.name)
 fido.bark()
