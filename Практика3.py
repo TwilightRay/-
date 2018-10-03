@@ -42,7 +42,7 @@ class Cat(Animal): #наследуемый класс
 
 
 class Wolf:
-    legs = 4
+    legs = 4   #круто, этот параметр тоже наследуется
     def __init__(self,name,color):
         self.name=name
         self.color=color
@@ -60,3 +60,21 @@ print(fido.name)
 fido.bark()
 print(fido.legs)
 print(Dog.legs)
+
+class A:
+    def method(self):
+        print("A")
+class B(A):
+    def method1(self):
+        print("B")
+class C(B):
+    def method2(self):
+        print("C")
+        super().method()#поиск метода по имени в суперклассе и вызывает его метод
+c = C()
+c.method()
+c.method1()
+c.method2()
+
+B().method()
+
