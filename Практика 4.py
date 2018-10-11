@@ -89,9 +89,15 @@ print(square.calculate_area())
 class Pizza:
     def __init__(self, toppings):
         self.toppings=toppings
+        self._pineapple_allowed = False
     @property
     def pineapple_allowed(self):
-        return False
+        return self._pineapple_allowed
+    @pineapple_allowed.setter
+    def pineapple_allowed(self, value):
+        if value:
+            password == ""
 pizza = Pizza(["cheese","tomato"])
 print(pizza.pineapple_allowed)
 pizza.pineapple_allowed=True
+
