@@ -144,3 +144,11 @@ while len(a)!=0:
 print("\n\n")
 print(frozenset('qwerty'))
 print("\n\n")
+
+
+name = input('Vvedite vashe imya: ')
+age = input('Vvedite, skolko vam let: ')
+name='Vas zovut: '+name
+age = 'Vam: '+age+' let.'
+print(name)
+print(age)
