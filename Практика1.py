@@ -126,11 +126,11 @@ print("\n\n")
 
 first={11,22,33,44,55,66,77,88,99,1,2,3,6,5,8,}
 second={22,555,22,33,66,888,77,11,1,2,3,4,5,6,7,8,9,12,2,32,65,45,78,98}
-print(first|second)#объединяет в одно, содержащее все эл-ты двух кучек
-print(first&second)#возвращает только общие эл-ты
-print(first-second)#только с первого
-print(second-first)#только с первого
-print(first^second)#симметричная разность-не возвращает общие эл-ты, а остальное выводит
+print(first|second) #объединяет в одно, содержащее все эл-ты двух кучек
+print(first&second) #возвращает только общие эл-ты
+print(first-second) #только с первого
+print(second-first) #только с первого
+print(first^second) #симметричная разность-не возвращает общие эл-ты, а остальное выводит
 
 print("\n\n")
 
@@ -153,9 +153,16 @@ age = 'Vam: '+age+' let.'
 print(name)
 print(age)
 
-s = 'Елена Малышева, Дмитрий Нагиев, Андрей Малахов, Иосиф Кобзон, Гарик Мартиросян'
-x=input('Введите ваше имя: ')
+s = 'Elena Malisheva, Dmitry Nagiev, Andrey Malahov, Iosiv Kabzon, Garik Martirosyan'
+x=input('Vvedite vashe imya: ')
 if (x in s):
-    print('Добро пожаловать на праздник!')
+    print('Dobro pozhalovatt na prazdnik')
 else:
-    print('Извините, но вас нет в списке гостей')
+    print('Izvinite. no vas net v spiske gostey')
+
+sun = input('vvedite 1 esli pogoda solnechnaya i 2 esli pasmurnaya: ')
+if(sun=='1'):
+    d='nuzhno zagoratt'
+else:
+    d='zagoratt ne poluchitsya'
+print(d)
