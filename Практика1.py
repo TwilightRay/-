@@ -1,3 +1,4 @@
+
 print('\nПервый код:')
 primary = {
     "red":[255,0,0],
@@ -166,3 +167,27 @@ if(sun=='1'):
 else:
     d='zagoratt ne poluchitsya'
 print(d)
+
+myname=input('Введите логин: ')
+mypass=input('Введите пароль: ')
+if ((myname=='ivan')and(mypass=='superpassword123') or (myname=='marina')and(mypass=='marinka93')):
+
+    print('Добро пожаловать, '+myname+"!")
+else:
+    print('До свидания.')
+
+
+v=int(input('Введите ваш возраст: '))
+if(v<18):
+    print('Привет, йуный кодер')
+elif(v<30):
+    print('Здравствуйте, молодой человек')
+elif(v<65):
+    print("Добрый день. Как семья, как дети?")
+elif(v<100):
+    print('Здорова, Михалыч, пенсию уже выдали?')
+elif(v>100):
+    print('Клан бессмертных приветствует тебя!')
+if sun==True and season=='Лето':
+    emotion="Ура, лето!"
+    print(emotion)
